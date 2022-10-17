@@ -982,8 +982,8 @@ video {
   font-family: Poppins, sans-serif;
 }
 
-.text-\[0\.75rem\] {
-  font-size: 0.75rem;
+.text-\[0\.60rem\] {
+  font-size: 0.60rem;
 }
 
 .text-\[1\.5rem\] {
@@ -1014,8 +1014,8 @@ video {
   line-height: 1.5rem;
 }
 
-.text-\[0\.60rem\] {
-  font-size: 0.60rem;
+.text-\[0\.65rem\] {
+  font-size: 0.65rem;
 }
 
 .font-bold {
@@ -1153,10 +1153,18 @@ video {
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
+
+  .lg\:text-\[1rem\] {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 320px) {
   .xs\:text-\[0\.70rem\] {
     font-size: 0.70rem;
+  }
+
+  .xs\:text-\[0\.65rem\] {
+    font-size: 0.65rem;
   }
 }
