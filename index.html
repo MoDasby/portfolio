@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Document</title>
+</head>
+<body class="bg-black text-zinc-300 font-poppins">
+    <header class="relative">
+        <nav class="w-full h-[10vh] flex flex-row justify-between items-center text-white bg-black fixed top-0 z-10">
+            <h1 id="logo" class="md:text-[1.5rem] font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#30E8BF] to-[#FF8235] mx-4 cursor-pointer sm:pl-6"></h1>
+            
+            <div class="p-4 md:hidden cursor-pointer" onclick="handleMenuButtonClick()">
+                <i class="uil uil-bars"></i>
+            </div>
+    
+            <ul id="list-menu" class="absolute hidden lg:static lg:w-auto bottom-[-50px] md:flex sm:text-[1rem] text-[0.60rem] justify-around bg-black px-6 w-full h-full items-center flex-row space-x-12 mr-16">
+                <li class="font-bold cursor-pointer text-zinc-500 transition duration-300 hover:text-zinc-300">
+                    <a href="#"> Inicio </a>
+                </li>
+                <li class="font-bold cursor-pointer whitespace-nowrap text-zinc-500 transition duration-300 hover:text-zinc-300">
+                    <a href="#aboutme"> Sobre mim </a>
+                </li>
+                <li class="font-bold cursor-pointer text-zinc-500 transition duration-300 hover:text-zinc-300">
+                    <a href="#projects"> Projetos </a>
+                </li>
+                <li class="font-bold cursor-pointer text-zinc-500 transition duration-300 hover:text-zinc-300">
+                    <a href="#contact"> Contato </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="w-full h-screen flex flex-col justify-center items-center text-center">
+        <h1 class="text-[1.5rem] text-center md:text-5xl font-bold z-0">Olá, eu sou o <span class="text-[#FF8235]">Giulliano</span></h1>
+        <h2 class="text-[1rem] md:text-4xl font-bold mt-4 overflow-hidden">
+            Desenvolvedor 
+            <span class="typed-text"></span>
+            <span id="cursor" class="w-[3px] h-full bg-zinc-300 animate-blink inline-block">&nbsp;</span>
+        </h2>
+
+        <a href="#aboutme" class="text-5xl mt-16 cursor-pointer animate-bounce">
+            <i class="uil uil-angle-down"></i>
+        </a>
+    </main>
+
+    <section id="aboutme" class="grid place-items-start place-content-center h-[100vh]">
+        <h1 class="text-4xl font-bold p-6 pl-6 text-transparent bg-clip-text bg-gradient-to-l from-[#FF8235] to-[#ee0979]">
+            Sobre mim
+        </h1>
+
+        <div class="grid md:grid-cols-2 grid-cols-1 place-items-center place-content-center">
+            <p class="px-6">
+                Olá, tenho 17 anos e sou estudante de programação, iniciei um curso técnico em informática recentemente mas
+                já estudo desenvolvimento web a pouco mais de 1 ano.
+                Adquiri conhecimentos em HTML, CSS, Javascript, ReactJS, MySQL, PostgreSQL, Java e Spring Boot. 
+                atualmente estou procurando me especializar no desenvolvimento de aplicações web, 
+                atuando tanto no frontend quanto no backend.
+            </p>
+
+            <img class="hidden md:h-[200px] md:block" src="../public/space-human-hand-repairing-a-cat-robot-next-to-a-cat-paw-diagram.png" />
+        </div>
+    </section>
+
+
+
+    <section id="projects" class="grid place-items-start place-content-center lg:h-[100vh]">
+        <h1 class="text-4xl w-full font-bold p-6 mt-24 text-center text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8235] to-[#30E8BF]">
+            Meus Projetos
+        </h1>
+
+        <div class="flex flex-col lg:flex-row lg:items-start lg:space-x-4 lg:space-y-0 justify-around items-center space-y-4 p-6">
+
+            <div class="w-full lg:min-h-[300px] lg:max-w-[400px] rounded-lg bg-[#121212] p-2">
+                <img class="w-full rounded-t-lg" src="../public/projects/md-flix.PNG" />
+                <footer class="flex flex-col items-center">
+                    <h1 class="p-2 w-full text-center font-bold bg-[#6441A5] rounded-b-lg">Md-flix</h1>
+                    <p class="p-2">
+                        Projeto desenvolvido em ReactJS, que utiliza a api do themoviedb 
+                        para exibir informações sobre filmes e séries.
+                    </p>
+                    <div class="w-full flex flex-row items-center space-x-2 py-2">
+                        <a href="https://md-flix.netlify.app/" target="_blank" class="p-2 w-full hover:opacity-80 transition duration-300 text-center bg-gradient-to-tr from-[#805AD5] to-[#2a0845] rounded-lg">Demo</a>
+                        <a href="https://github.com/MoDasby/md-flix" target="_blank" class="p-2 w-full hover:opacity-80 transition duration-300 text-center bg-gradient-to-br from-[#2a0845] to-[#805AD5] rounded-lg">Código</a>
+                    </div>
+                </footer>
+            </div>
+
+
+            <div class="w-full lg:min-h-[300px] lg:max-w-[400px] rounded-lg bg-[#121212] p-2">
+                <img class="w-full rounded-t-lg" src="../public/projects/sparkus.PNG" />
+                <footer class="flex flex-col items-center">
+                    <h1 class="p-2 w-full text-center font-bold bg-[#6441A5] rounded-b-lg">Sparkus</h1>
+                    <p class="p-2">
+                        Uma rede social desenvolvida em ReactJS e Spring Boot, 
+                        com o objetivo de aprender mais sobre autenticação e autorização. 
+                        (pode ser que demore um pouco para carregar, pois o servidor está hospedado no heroku)
+                    </p>
+                    <div class="w-full flex flex-row items-center space-x-2 py-2">
+                        <a href="https://sparkus.netlify.app/" target="_blank" class="p-2 w-full hover:opacity-80 transition duration-300 text-center bg-gradient-to-tr from-[#805AD5] to-[#2a0845] rounded-lg">Demo</a>
+                        <a href="https://github.com/MoDasby/sparkus" target="_blank" class="p-2 w-full hover:opacity-80 transition duration-300 text-center bg-gradient-to-br from-[#2a0845] to-[#805AD5] rounded-lg">Código</a>
+                    </div>
+                </footer>
+            </div>
+
+
+            <div class="w-full lg:min-h-[300px] lg:max-w-[400px] rounded-lg bg-[#121212] p-2">
+                <img class="w-full rounded-t-lg" src="../public/projects/image-uploader.PNG" />
+                <footer class="flex flex-col items-center">
+                    <h1 class="p-2 w-full text-center font-bold bg-[#004e92] rounded-b-lg">Image Uploader</h1>
+                    <p class="p-2">
+                        Projeto desenvolvido em ReactJS e Spring Boot, que utiliza uma api 
+                        desenvolvida por mim para fazer upload e download de imagens.
+                        (pode ser que demore um pouco para carregar, pois o servidor está hospedado no heroku)
+                    </p>
+                    <div class="w-full flex flex-row items-center space-x-2 py-2">
+                        <a href="https://image-uploader-modasby.netlify.app/" target="_blank" class="p-2 w-full hover:opacity-80 transition duration-300 text-center bg-gradient-to-tr from-[#2f80ed] to-[#004e92] rounded-lg">Demo</a>
+                        <a href="https://github.com/MoDasby/image-uploader" target="_blank" class="p-2 w-full hover:opacity-80 transition duration-300 text-center bg-gradient-to-br from-[#004e92] to-[#2F80ED] rounded-lg">Código</a>
+                    </div>
+                </footer>
+            </div>
+
+
+            <div class="w-full lg:min-h-[300px] lg:max-w-[400px] rounded-lg bg-[#121212] p-2">
+                <img class="w-full rounded-t-lg" src="../public/projects/portfolio.PNG" />
+                <footer class="flex flex-col items-center">
+                    <h1 class="p-2 w-full text-center font-bold bg-gradient-to-br from-[#833ab4] to-[#fd1d1d] rounded-b-lg">Meu portfolio</h1>
+                    <p class="p-2">
+                        Meu portfolio, desenvolvido em HTML, TailwindCSS e JavaScript,
+                        creio que seja válido mencionar esse própio site pois é um projeto
+                        desenvolvido por mim.
+                    </p>
+                    <div class="w-full flex flex-row items-center space-x-2 py-2">
+                        <a href="https://github.com/MoDasby/image-uploader" target="_blank" class="p-2 hover:opacity-80 transition duration-300 w-full text-center bg-gradient-to-br from-[#7b4397] to-[#dc2430] rounded-lg">Código</a>
+                    </div>
+                </footer>
+            </div>
+    </section>
+
+    <section id="contact" class="grid place-items-start place-content-center h-[90vh]">
+        <h1 class="text-2xl md:text-4xl w-full font-bold p-6 pt-10 text-center text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8235] to-[#30E8BF]">
+            Entre em contato comigo
+        </h1>
+        
+        <ul class="text-2xl space-x-4 text-center  w-full flex flex-row justify-center items-center text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8235] to-[#30E8BF]">
+            <li>
+                <a href="https://t.me/MoDasby" target="_blank">
+                    <i class="uil uil-telegram-alt"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://wa.me/5531995883601?text=oi,%20vim%20do%20seu%20site" target="_blank">
+                    <i class="uil uil-whatsapp"></i>
+                </a>
+            </li>
+        </ul>   
+    </section>
+
+    <button class="hidden hover:opacity-80 transition duration-300 fixed bottom-6 right-6 text-base h-10 bg-gradient-to-tr from-[#dd3e54] to-[#5D26C1] rounded-lg">
+        <a href="#" class="p-4">
+            <i class="uil uil-arrow-up"></i>
+            Voltar ao topo
+        </a>
+    </button>
+
+    <script>
+        document.getElementById('logo').innerText = "<Modasby />";
+
+        const btn = document.querySelector('button');
+        const nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                btn.classList.remove('hidden');
+                nav.classList.add('bg-black');
+            } else {
+                btn.classList.add('hidden');
+                nav.classList.remove('bg-black');
+            }
+        })
+
+
+        const typedTextSpan = document.querySelector(".typed-text");
+        const cursorSpan = document.querySelector("#cursor");
+
+        const textArray = ["Backend", "Frontend", "Fullstack"];
+        const typingDelay = 200;
+        const erasingDelay = 100;
+        const newTextDelay = 2000;
+        let textArrayIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } 
+            else {
+                cursorSpan.classList.remove("typing");
+                setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            } 
+            else {
+                cursorSpan.classList.remove("typing");
+                textArrayIndex++;
+                if(textArrayIndex>=textArray.length) textArrayIndex=0;
+                setTimeout(type, typingDelay + 1100);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+            if(textArray.length) setTimeout(type, newTextDelay + 250);
+        });
+
+        const handleMenuButtonClick = () => {
+            const listMenu = document.querySelector('#list-menu');
+
+            listMenu.classList.toggle('hidden');
+            listMenu.classList.toggle('flex');
+        }
+    </script>
+</body>
+</html>
